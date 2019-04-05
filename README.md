@@ -1,5 +1,5 @@
 Informix 14.10 supports CTE, here comes a couple of fun queries with CTE
-
+<pre>
 steps:
 1) download and install informix 14.10
 2) create a test database with dbaccess
@@ -58,3 +58,4 @@ _7   ####   ##  ##  ####     ####   ####    ##   ##  ####   ##   ##          ###
 _8                                                                                                                           
 
 
+</pre>
