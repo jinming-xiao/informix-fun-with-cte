@@ -45,7 +45,7 @@ steps:
 
    dbaccess test Julia | grep -v '^$'
 
-7) Fonts processing
+7) Fonts process
    dbaccess test informix_is_fun.sql
 
 _1   ####             ###                             ##                      ##                    #######                  
