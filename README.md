@@ -12,7 +12,7 @@ steps:
       return s1 || s2;
     end function;
 
-4) setenv DBACCESS_COLUMNS 120
+4) setenv DBACCESS_COLUMNS 180
 
 5) Mandelbrot.sql - produces an ASCII-art image of the Mandelbrot set
    informix version https://wiki.postgresql.org/wiki/Mandelbrot_set
