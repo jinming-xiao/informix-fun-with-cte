@@ -208,7 +208,7 @@ order by xword.o desc)
 </pre>
 
 <b>Example of a Hierarchical Data Set</b><br>
-In several topics that follow, SQL code examples that illustrate hierarchical queries are based on hierarchic data in the following employee table, whose rows contains information about employees within an organizational hierarchy. The mgrid column shows the employee identifier (empid) of the manager to whom the employee reports:
+SQL code examples that illustrate hierarchical queries are based on hierarchic data in the following employee table, whose rows contains information about employees within an organizational hierarchy. The mgrid column shows the employee identifier (empid) of the manager to whom the employee reports:
 <pre>
 CREATE TABLE employee(
                       empid  INTEGER NOT NULL PRIMARY KEY,
@@ -477,4 +477,4 @@ x  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#**********#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 </pre>
 
-Thanks for reading!
+Thanks for reading and have fun with Informix new features!
