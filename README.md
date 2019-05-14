@@ -282,10 +282,7 @@ WITH    x(n) AS ( select -80 UNION ALL select n+1 from x where n < 80),
                 g + 1
         FROM    q WHERE   rx IS NOT NULL AND g < 99),
         Zt (i, r, x) AS (
-        -- SELECT i, r, SUBSTR(" .:-=+*#%@", (MAX(g) /10 +1)::int, 1) as x
-        --                      01234567890123456789012345678901234567890123456789
         SELECT i, r,    SUBSTR("@@B%8&WM#*oaqwmO0Ucrt/\|()1{}[]?-_+~<>i!l;;:,``'.", 50 - (MAX(g)/2)::int, 1) as x
-        -- SELECT i, r,    SUBSTR(" ..,,,-----++++====***%%%%@@@@@#####", 50 - (MAX(g)/2)::int, 1) as x
         FROM q GROUP BY i, r order by r desc)
 SELECT  sum(x::lvarchar) as x from Zt group by i order by i;
 
