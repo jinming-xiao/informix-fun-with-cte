@@ -182,26 +182,26 @@ x(n, p) as (
 ),
 </pre>
 
-(5) print ‘X’ or ‘ ‘ for each bit in the font data for each character
+(5) print ‘#’ or ‘ ‘ for each bit in the font data for each character
 <pre>
 show as (
 select
         sum((case when bitand(to_number(c1)::int, p) > 0
-                then 'X' else ' ' end)::lvarchar)::char(8) as c1,
+                then '#' else ' ' end)::lvarchar)::char(8) as c1,
         sum((case when bitand(to_number(c2)::int, p) > 0
-                then 'X' else ' ' end)::lvarchar)::char(8) as c2,
+                then '#' else ' ' end)::lvarchar)::char(8) as c2,
         sum((case when bitand(to_number(c3)::int, p) > 0
-                then 'X' else ' ' end)::lvarchar)::char(8) as c3,
+                then '#' else ' ' end)::lvarchar)::char(8) as c3,
         sum((case when bitand(to_number(c4)::int, p) > 0
-                then 'X' else ' ' end)::lvarchar)::char(8) as c4,
+                then '#' else ' ' end)::lvarchar)::char(8) as c4,
         sum((case when bitand(to_number(c5)::int, p) > 0
-                then 'X' else ' ' end)::lvarchar)::char(8) as c5,
+                then '#' else ' ' end)::lvarchar)::char(8) as c5,
         sum((case when bitand(to_number(c6)::int, p) > 0
-                then 'X' else ' ' end)::lvarchar)::char(8) as c6,
+                then '#' else ' ' end)::lvarchar)::char(8) as c6,
         sum((case when bitand(to_number(c7)::int, p) > 0
-                then 'X' else ' ' end)::lvarchar)::char(8) as c7,
+                then '#' else ' ' end)::lvarchar)::char(8) as c7,
         sum((case when bitand(to_number(c8)::int, p) > 0
-                then 'X' else ' ' end)::lvarchar)::char(8) as c8
+                then '#' else ' ' end)::lvarchar)::char(8) as c8
 from x cross join xword
 group by xword.o
 order by xword.o desc)
