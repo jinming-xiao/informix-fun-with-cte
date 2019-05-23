@@ -1,4 +1,4 @@
-<h1>informix Recursive Common Table Expression</h1>
+<h1>informix Common Table Expression</h1>
 
 <pre>
 Common Table Expression is a SQL standard feature, it can help customers
